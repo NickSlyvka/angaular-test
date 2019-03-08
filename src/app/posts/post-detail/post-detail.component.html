@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col s12 m6 offset-m3">
+    <div class="card">
+      <div class="card-image">
+        <img src="https://materializecss.com/images/sample-1.jpg">
+        <span class="card-title">{{ post.id }}</span>
+      </div>
+      <div class="card-content">
+        <p>{{ post.body }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class=" col-md-9 col-sm-12 offset-md-3" *ngFor="let c of comments">
+    <div class="row">
+      <div class="col-md-2 col-sm-2 col-5">
+        <img src="https://dummyimage.com/150x150/5a5a5a/ffffff" class="img-thumbnail" width="150px">
+      </div>
+      <div class="col-md-10 col-sm-10 col-7">
+        <h4 class="float-left">{{ c.name}}</h4>
+        <h4 class="text-right">{{ c.email}}</h4>
+        <p>{{ c.body }}</p>  
+      </div>
+    </div>
+    
+  </div>
+</div>
+<hr>  

@@ -1,0 +1,11 @@
+.list-inline-item{
+	border-right:1px solid black;
+	padding-right:6px;
+	line-height:0.4em;
+}
+.list-inline-item:last-child{
+	border:none;
+}
+.post-detail ul{
+	margin-top:15px;
+}
